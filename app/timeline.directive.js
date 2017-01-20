@@ -25,7 +25,6 @@ angular.module('app')
                     timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
                     timelineComponents['eventsContent'] = timeline.children('.events-content');
 
-                    console.dir(timelineComponents['timelineDates'])
 
                     //assign a left postion to the single events along the timeline
                     setDatePosition(timelineComponents, eventsMinDistance);

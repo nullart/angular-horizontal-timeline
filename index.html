@@ -16,14 +16,18 @@
 
     <title>Horizontal Timeline | CodyHouse</title>
 </head>
-<body ng-app="app">
-<section ng-controller="timelineController" class="cd-horizontal-timeline" data-spacing="60" time-line>
+<body ng-app="app" ng-controller="timelineController">
+<section>
+    <button ng-click="remove()">try remove</button>
+</section>
+
+<section  class="cd-horizontal-timeline" data-spacing="60" time-line>
     <div class="timeline">
         <div class="events-wrapper">
             <div class="events">
                 <ol>
-                    <li ng-repeat="node in nodes" >
-                        <a time-line-li ng-class="{'selected':$index == 0}" href="#0" data-date="{{node.date}}"
+                    <li time-line-li ng-repeat="node in nodes">
+                        <a ng-class="{'selected':$index == 0}" href="#0" data-date="{{node.date}}"
                            class="border-after-blue bg-after-blue">{{node.name}}
                         </a>
                     </li>
@@ -191,7 +195,6 @@
     </div>
     <!-- .events-content -->
 </section>
-
 <script src="js/jquery-2.1.4.js"></script>
 <script src="js/jquery.mobile.custom.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>

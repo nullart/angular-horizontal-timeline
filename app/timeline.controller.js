@@ -3,13 +3,14 @@
  */
 angular.module('app', []).controller('timelineController', function ($scope) {
 
-    var nodes = [{
-        name: "审批1",
-        date: "01/04/2016"
-    }, {
-        name: "审批2",
-        date: "01/06/2016"
-    },
+    var nodes = [
+        {
+            name: "审批1",
+            date: "01/04/2016"
+        }, {
+            name: "审批2",
+            date: "01/06/2016"
+        },
         {
             name: "审批3",
             date: "01/10/2016"
@@ -24,7 +25,8 @@ angular.module('app', []).controller('timelineController', function ($scope) {
         }, {
             name: "审批6",
             date: "01/22/2016"
-        }, {
+        },
+        {
             name: "审批7",
             date: "01/23/2016"
         }, {
