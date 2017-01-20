@@ -9,3 +9,5 @@ An easy to customize, horizontal timeline powered by CSS and jQuery.
  
 [Terms](http://codyhouse.co/terms/)
 # angular-horizontal-timeline
+
+use in angular with ng-repeat
